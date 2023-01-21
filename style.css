@@ -14,5 +14,8 @@ body{
     columns: repeat(40, auto);
     height: 50vh;
     width: 50vh;
+    border-style: solid;
+    border-color: black;
+    box-shadow: 4px 4px lightgray;
 }
 
