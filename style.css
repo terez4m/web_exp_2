@@ -9,7 +9,7 @@ body{
     padding-top: 150px;
 }
 
-#screen{
+.screen{
     display: grid;
     columns: repeat(40, auto);
     height: 50vh;

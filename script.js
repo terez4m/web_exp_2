@@ -35,4 +35,4 @@ function create_random_grid(){
     })
     }
 
-setInterval(create_random_grid, 500);
+setInterval(create_random_grid, 100);
