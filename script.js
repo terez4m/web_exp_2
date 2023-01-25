@@ -1,4 +1,4 @@
-const totalBlocks = 40;
+const totalBlocks = 20;
 let screen = document.querySelectorAll('.screen');
 
 function random_01(){
@@ -17,10 +17,14 @@ function change_color(e){
 
 function create_random_grid(){
     let bodyCell;
+    let bodyCell2;
     for(let i = 0; i < totalBlocks; i++){
         bodyCell = document.createElement('div');
+        bodyCell2 = document.createElement('div');
         bodyCell.className = 'cell';
-        document.getElementById('screen').appendChild(bodyCell);
+        bodyCell2.className = 'cell';
+        document.getElementById('screen1').appendChild(bodyCell);
+        document.getElementById('screen3').appendChild(bodyCell2);
     }
     document.querySelectorAll('.cell').forEach(e =>{
         let color = random_01();
@@ -31,4 +35,4 @@ function create_random_grid(){
     })
     }
 
-setInterval(create_random_grid, 100);
+setInterval(create_random_grid, 500);
