@@ -26,6 +26,7 @@ function create_random_grid(){
         document.getElementById('screen1').appendChild(bodyCell);
         document.getElementById('screen3').appendChild(bodyCell2);
     }
+    document.getElementById('screen2').style.gridTemplate= `repeat(${totalBlocks}, 1fr) / repeat(${totalBlocks}, 1fr)`;
     document.querySelectorAll('.cell').forEach(e =>{
         let color = random_01();
         if(color == 0){
@@ -33,6 +34,6 @@ function create_random_grid(){
         }else{
             e.style.backgroundColor = "black";        }
     })
-    }
+}
 
 setInterval(create_random_grid, 100);

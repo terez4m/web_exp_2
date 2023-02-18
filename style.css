@@ -19,3 +19,9 @@ body{
     box-shadow: 4px 4px lightgray;
 }
 
+#screen2{
+    background-color: white;
+    border-style: none;
+    box-shadow: none;
+}
+
