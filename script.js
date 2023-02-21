@@ -35,5 +35,5 @@ function create_random_grid(){
             e.style.backgroundColor = "black";        }
     })
 }
-
+console.log('ola');
 setInterval(create_random_grid, 100);
